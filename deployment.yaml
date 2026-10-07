@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name: html-demo
+name: html-demo-docker
 spec:
 replicas: 2
 selector:
@@ -14,7 +14,7 @@ app: html-demo
 spec:
 containers:
 - name: html-demo
-image: brama/html-demo-docker:latest
+image: bramag/html-demo-docker:latest
 ports:
 - containerPort: 80
 ---
